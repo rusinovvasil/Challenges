@@ -1,6 +1,11 @@
 function shiftToLeft(x, y) {
 
-    return x * (2 ** y);
+    // return x * (2 ** y);
+
+    // another simple solution
+    let power = 2 ** y;
+    let result = x * power;
+    return result;
 }
 console.log(shiftToLeft(5, 2)); // ➞ 20
 
